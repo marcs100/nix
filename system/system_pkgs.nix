@@ -11,7 +11,12 @@
 	gnome.gnome-software
 	gnome-extension-manager
 	gnome.gnome-tweaks
+	gnome.gnome-boxes
 	syncthing
-	floorp
+	bitwarden-desktop
+	fractal
+	discord
+	kdePackages.elisa
+	kdePackages.breeze
   ];
 }
