@@ -8,10 +8,6 @@
 	git
 	curl
 	wget
-	gnome.gnome-software
-	gnome-extension-manager
-	gnome.gnome-tweaks
-	gnome.gnome-boxes
 	syncthing
 	bitwarden-desktop
 	fractal

@@ -15,6 +15,7 @@
         # so the old configuration file still takes effect
         ./configuration.nix
         ./system/system_pkgs.nix
+        ./system/gnome.nix
       ];
     };
   };
