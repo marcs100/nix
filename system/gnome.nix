@@ -4,10 +4,28 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   
+  environment.gnome.excludePackages = (with pkgs; [
+    # for packages that are pkgs.*
+    gnome-tour
+    gnome-music
+    epiphany
+    simple-scan
+  ]) ++ (with pkgs.gnome; [
+    # for packages that are pkgs.gnome.*
+    #evince # document viewer
+  ]);
+  
    environment.systemPackages = with pkgs; [
-	gnome.gnome-software
+	gnome-software
 	gnome-extension-manager
-	gnome.gnome-tweaks
-	gnome.gnome-boxes
+	gnome-tweaks
+	gnome-boxes
+	gnome.gnome-bluetooth
+	# extensions ----------
+	gnomeExtensions.tray-icons-reloaded
+	gnomeExtensions.dash-to-dock
+	gnomeExtensions.no-overview
+	gnomeExtensions.resource-monitor
+	#----------------------
   ];
 }
