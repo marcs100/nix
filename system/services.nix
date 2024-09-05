@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {    
-    # Enable the X11 windowing system.
+    # Enable the X11 windowing system. Can I safley remove this????
     services.xserver.enable = true;
     
     # Flatpak
