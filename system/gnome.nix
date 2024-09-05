@@ -4,6 +4,10 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   
+  programs.gnoneExtensions-dash-to-dock = {
+    enable = true; 
+  };
+  
   environment.gnome.excludePackages = (with pkgs; [
     # for packages that are pkgs.*
     gnome-tour
@@ -24,7 +28,7 @@
 	# extensions ----------
 	gnomeExtensions.tray-icons-reloaded
 	gnomeExtensions.dash-to-dock
-	gnomeExtensions.no-overview
+	#gnomeExtensions.no-overview
 	gnomeExtensions.resource-monitor
 	#----------------------
   ];
