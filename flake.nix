@@ -14,12 +14,13 @@
         # Import the previous configuration.nix we used,
         # so the old configuration file still takes effect
         #./configuration.nix
+        ./hardware-configuration.nix
         ./system/boot.nix
         ./system/settings.nix
         ./system/system_pkgs.nix
         ./system/gnome.nix
         ./system/services.nix
-        ./system.users.nix
+        ./system/users.nix
       ];
     };
   };

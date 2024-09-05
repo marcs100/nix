@@ -1,10 +1,5 @@
 { config, pkgs, ... }:
-{
-    #imports =
-    #[ # Include the results of the hardware scan.
-    #  ./hardware-configuration.nix
-    #];
-    
+{    
     # Enable the X11 windowing system.
     services.xserver.enable = true;
     
