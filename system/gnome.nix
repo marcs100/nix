@@ -20,7 +20,7 @@
 	gnome-extension-manager
 	gnome-tweaks
 	gnome-boxes
-	gnome-bluetooth
+	#gnome-bluetooth
 	# extensions ----------
 	gnomeExtensions.tray-icons-reloaded
 	gnomeExtensions.dash-to-dock

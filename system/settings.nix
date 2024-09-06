@@ -12,8 +12,8 @@
     # $ nix search wget
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
-    hardware.bluetooth.enable = true; # enables support for Bluetooth
-    hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+    #hardware.bluetooth.enable = true; # enables support for Bluetooth
+    #hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 
     networking.hostName = "Vault-Tec"; # Define your hostname.
     # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
