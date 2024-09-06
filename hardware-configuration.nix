@@ -23,6 +23,11 @@
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
+    
+    fileSystems."/home/marc/mnt" =
+    { device = "/dev/disk/by-uuid/118095224C2CAD7E";
+      fsType = "ntfs";
+    };
 
   swapDevices = [ ];
 

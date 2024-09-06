@@ -12,5 +12,6 @@
 	bitwarden-desktop
 	fractal
 	discord
+	terminus-nerdfont
   ];
 }
