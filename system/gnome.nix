@@ -27,5 +27,8 @@
 	#gnomeExtensions.no-overview
 	gnomeExtensions.resource-monitor
 	#----------------------
+	kdePackages.elisa
+	kdePackages.breeze
+	kdePackages.kate
   ];
 }

@@ -12,7 +12,5 @@
 	bitwarden-desktop
 	fractal
 	discord
-	kdePackages.elisa
-	kdePackages.breeze
   ];
 }

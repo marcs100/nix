@@ -14,6 +14,8 @@
     #];
     
    environment.systemPackages = with pkgs; [
+	kdePackages.elisa
+	kdePackages.breeze
 	kdePackages.kate
 	kdePackages.dolphin
 	kdePackages.filelight
