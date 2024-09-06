@@ -24,11 +24,13 @@
         python312Packages.python-lsp-server
         neovim
         kdePackages.kate
-	    kdePackages.konsole
+	kdePackages.konsole
       ];
 
       shellHook = ''
-        echo "****Dev Environment****"
+         echo "------------------------"
+	 echo "|   Dev Environment    |"
+	 echo "------------------------"
       '';
     };
   };

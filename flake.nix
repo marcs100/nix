@@ -1,5 +1,5 @@
 {
-  description = "Main Vault-Tec flake";
+  description = "Main Vortex flake";
 
   inputs = {
     # NixOS official package source, using the nixos-23.11 branch here
@@ -8,7 +8,7 @@
 
   outputs = { self, nixpkgs, ... }@inputs: {
     # Please replace my-nixos with your hostname
-    nixosConfigurations.Vault-Tec = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.vortex = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         # Import the previous configuration.nix we used,
