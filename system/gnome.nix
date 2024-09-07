@@ -18,7 +18,8 @@
    environment.systemPackages = with pkgs; [
 	kdePackages.elisa
 	kdePackages.breeze
-	kdePackages.kate
+	kdePackages.breeze-icons
+	#kdePackages.kate
 	gnome-software
 	gnome-extension-manager
 	gnome-tweaks

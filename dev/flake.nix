@@ -23,8 +23,10 @@
         python312Packages.tkinter
         python312Packages.python-lsp-server
         neovim
+	#kdePackages.breeze
+        #kdePackages.breeze-icons
         kdePackages.kate
-	kdePackages.konsole
+ 	kdePackages.konsole
       ];
 
       shellHook = ''
