@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 {
+    #imports = [
+    #    inputs.home-manager.nixosModules.default
+    #];
+
     # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.marc = {
         isNormalUser = true;
@@ -9,4 +13,13 @@
         #  thunderbird
         ];
     };
+
+
+    #home-manager = {
+    #    #also pass inputs to home-manager modules
+    #    extraSpecialArgs = { inherit inputs; };
+    #    users = {
+    #        "marc" = import ./home-manager/home.nix;
+    #    };
+    #};
 }

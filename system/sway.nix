@@ -25,9 +25,11 @@
         enable = true;
         wrapperFeatures.gtk = true;
     };
-    programs.waybar = {
-        enable = true;
-    };
+
+    #programs.waybar = {
+    #    enable = true;
+    #};
+
     environment.systemPackages = with pkgs; [
         #grim # screenshot functionality
         #slurp # screenshot functionality
