@@ -23,8 +23,11 @@
         python312Packages.tkinter
         python312Packages.python-lsp-server
         neovim
+        kitty
+        terminus-nerdfont
 	#kdePackages.breeze
         #kdePackages.breeze-icons
+        
         kdePackages.kate
  	kdePackages.konsole
       ];
