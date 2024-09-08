@@ -18,6 +18,10 @@
 
     vim = {
       enable = true;
+      plugins = with pkgs.vimPlugins; [
+          vim-airline
+          nerdtree
+      ];
       settings = {
         tabstop = 4;
       };
@@ -25,6 +29,14 @@
       extraConfig = ''
         set smartindent
         set autoindent
+        set mouse=a
+        set expandtab
+        set ignorecase
+        set smartcase
+        set number
+        set nowrap
+        map <F2> :NERDTreeToggle<CR>
+        map <F3> :NERDTreeFind<CR>
       '';
     };
 
