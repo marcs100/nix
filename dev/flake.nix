@@ -33,9 +33,10 @@
       ];
 
       shellHook = ''
-         echo "------------------------"
-	 echo "|   Dev Environment    |"
-	 echo "------------------------"
+        echo "------------------------"
+        echo "|   Dev Environment    |"
+        echo "------------------------"
+        export PS1="\e[1;31m[\u@DEV_SHELL > \e[0m"
       '';
     };
   };
