@@ -22,15 +22,14 @@
           vim-airline
           nerdtree
       ];
-      settings = {
-        tabstop = 4;
-      };
-
+      
       extraConfig = ''
         set smartindent
         set autoindent
         set mouse=a
+        set tabstop=4
         set expandtab
+		set shiftwidth=4 smarttab        
         set ignorecase
         set smartcase
         set number

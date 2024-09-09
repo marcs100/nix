@@ -1,30 +1,35 @@
 { config, pkgs, lib, ... }:
 {
     #login manager - only use of not usinf with another desktop!
-    services.xserver.displayManager.gdm.enable = true;
+    services.xserver.displayManager.sddm.enable = true;
     
     #neeed for Mount, trash. etc on Thunar
     services.gvfs.enable = true;
 
     #Thumbnail supoport for images on Thunar
-    services.tumbler.enable = true;
+    #services.tumbler.enable = true;
 
-    programs.thunar.enable = true;
+    #programs.thunar.enable = true;
 
     #needed if xfce is not used as desktop, Saves and program preferences
     programs.xfconf.enable = true;
 
     #Thunar plugins
-    programs.thunar.plugins = with pkgs.xfce; [
-        thunar-volman
-        thunar-archive-plugin
-    ];
+    #programs.thunar.plugins = with pkgs.xfce; [
+    #    thunar-volman
+    #    thunar-archive-plugin
+    #];
 
-    # enable Sway window manager
-    programs.sway = {
-        enable = true;
-        wrapperFeatures.gtk = true;
+    services.hypridle.enable = true;
+
+    # enable hyprland window manager
+    programs = {
+      hyprland.enable = true;
+      hyprlock.enable = true;
+      xwayland.enable = true;
+      #kitty.enable = true;
     };
+    
 
     #programs.waybar = {
     #    enable = true;
@@ -35,14 +40,19 @@
         #slurp # screenshot functionality
         kitty
         wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
-        mako # notification system developed by swaywm maintainer
-        rofi
+        wofi
         waybar
-        swaybg
-        swaylock
-        swaysettings
-        swayidle
+        hyprpaper
         swaynotificationcenter
+        kdePackages.elisa
+        kdePackages.breeze
+        kdePackages.breeze-icons
+        kdePackages.kate
+        kdePackages.kio
+        kdePackages.kio-admin
+        kdePackages.kio-fuse
+        kdePackages.dolphin
+
     ];
     # Enable the gnome-keyring secrets vault.
     # Will be exposed through DBus to programs willing to store secrets.
