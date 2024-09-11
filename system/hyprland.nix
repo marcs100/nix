@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 {
     #login manager - only use of not usinf with another desktop!
-    services.xserver.displayManager.sddm.enable = true;
+    #services.xserver.displayManager.sddm.enable = true;
     
     #neeed for Mount, trash. etc on Thunar
     services.gvfs.enable = true;
@@ -38,20 +38,21 @@
     environment.systemPackages = with pkgs; [
         #grim # screenshot functionality
         #slurp # screenshot functionality
-        kitty
+        alacritty
         wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
         wofi
         waybar
         hyprpaper
         swaynotificationcenter
-        kdePackages.elisa
-        kdePackages.breeze
-        kdePackages.breeze-icons
-        kdePackages.kate
-        kdePackages.kio
-        kdePackages.kio-admin
-        kdePackages.kio-fuse
-        kdePackages.dolphin
+        brightnessctl
+        #kdePackages.elisa
+        #kdePackages.breeze
+        #kdePackages.breeze-icons
+        #kdePackages.kate
+        #kdePackages.kio
+        #kdePackages.kio-admin
+        #kdePackages.kio-fuse
+        #kdePackages.dolphin
 
     ];
     # Enable the gnome-keyring secrets vault.

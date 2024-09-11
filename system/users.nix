@@ -8,7 +8,7 @@
     users.users.marc = {
         isNormalUser = true;
         description = "marc";
-        extraGroups = [ "networkmanager" "wheel" ];
+        extraGroups = [ "networkmanager" "wheel" "input" ];
         packages = with pkgs; [
         #  thunderbird
         ];

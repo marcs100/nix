@@ -22,5 +22,6 @@
         distrobox  
         podman
         fastfetch
+        libreoffice-qt6-fresh
   ];
 }

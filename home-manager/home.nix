@@ -6,8 +6,17 @@
   home.username = "marc";
   home.homeDirectory = "/home/marc";
 
+
   # Install & Configure Git
   programs = {
+
+    bash = {
+      enable = true;
+      shellAliases = {
+         edit-conf = "vim -S ~/nix.vim";
+         nix-rebuild = "sudo nixos-rebuild switch --flake ~/nix";
+      };
+    };
 
     git = {
       enable = true;

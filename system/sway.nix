@@ -33,7 +33,7 @@
     environment.systemPackages = with pkgs; [
         #grim # screenshot functionality
         #slurp # screenshot functionality
-        kitty
+        alacritty
         wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
         mako # notification system developed by swaywm maintainer
         rofi
@@ -43,6 +43,7 @@
         swaysettings
         swayidle
         swaynotificationcenter
+        brightnessctl
     ];
     # Enable the gnome-keyring secrets vault.
     # Will be exposed through DBus to programs willing to store secrets.

@@ -25,6 +25,7 @@
         neovim
         alacritty
         terminus-nerdfont
+
       ];
 
       shellHook = ''
