@@ -15,6 +15,7 @@
       shellAliases = {
          edit-conf = "vim -S ~/nix.vim";
          nix-rebuild = "sudo nixos-rebuild switch --flake ~/nix";
+         nix-clean = "sudo nix-env --delete-generations +5 --profile /nix/var/nix/profiles/system && nix-collect-grabage && sudo nixos-rebuild boot --flake ~/nix";
       };
     };
 

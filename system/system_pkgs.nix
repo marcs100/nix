@@ -14,6 +14,8 @@
         git
         curl
         wget
+        btop
+        htop
         syncthing
         bitwarden-desktop
         fractal
