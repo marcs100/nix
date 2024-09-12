@@ -36,8 +36,8 @@
               ./system/settings.nix
               ./system/system_pkgs.nix
               #./system/gnome.nix
-              #./system/sway.nix
-              ./system/hyprland.nix
+              ./system/sway.nix
+              #./system/hyprland.nix
               ./system/plasma.nix
               ./system/services.nix
               ./system/users.nix

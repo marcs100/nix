@@ -19,6 +19,7 @@
         fractal
         discord
         terminus-nerdfont
+        font-awesome
         distrobox  
         podman
         fastfetch
