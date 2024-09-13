@@ -18,7 +18,7 @@
         htop
         syncthing
         bitwarden-desktop
-        fractal
+        element-desktop
         discord
         terminus-nerdfont
         font-awesome

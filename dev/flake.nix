@@ -23,9 +23,6 @@
         python312Packages.tkinter
         python312Packages.python-lsp-server
         neovim
-        alacritty
-        terminus-nerdfont
-
       ];
 
       shellHook = ''

@@ -32,6 +32,7 @@
       kdePackages.filelight
       kdePackages.konsole
       kdePackages.discover
+      kdePackages.yakuake
 	
   ];
   
