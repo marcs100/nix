@@ -6,12 +6,15 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    #marcpkgs.url = "https://github.com/marcs100/scribe-cli/releases/tag/0.1.0/source";
+    scribecli-pkg.url = "path:./packages/scribe-cli/";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, scribecli-pkg, ... }@inputs:
   let
      system = "x86_64-linux";
      pkgs = nixpkgs.legacyPackages.${system};
+     scribe-cli = scribecli-pkg;
      host = "vortex";
      username = "marc";
   in
@@ -24,6 +27,7 @@
               inherit username;
               inherit host;
               inherit inputs;
+              inherit scribe-cli;
             };
 
 
@@ -47,6 +51,7 @@
                   inherit username;
                   inherit inputs;
                   inherit host;
+                  inherit scribe-cli;
                 };
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;

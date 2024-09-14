@@ -22,7 +22,11 @@
         python312
         python312Packages.tkinter
         python312Packages.python-lsp-server
-        neovim
+        vscode-extensions.vadimcn.vscode-lldb
+        lldb
+        lua-language-server
+        bash-language-server
+        clang
       ];
 
       shellHook = ''

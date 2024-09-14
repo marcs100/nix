@@ -37,10 +37,42 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1725983898,
+        "narHash": "sha256-4b3A9zPpxAxLnkF9MawJNHDtOOl6ruL0r6Og1TEDGCE=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "1355a0cbfeac61d785b7183c0caaec1f97361b43",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "scribecli-pkg": "scribecli-pkg"
+      }
+    },
+    "scribecli-pkg": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-liRR5VuEcjJ/f/LOa1pGQ7PSr0vme1HC0Yk3O6FHFVM=",
+        "path": "./packages/scribe-cli/",
+        "type": "path"
+      },
+      "original": {
+        "path": "./packages/scribe-cli/",
+        "type": "path"
       }
     }
   },
