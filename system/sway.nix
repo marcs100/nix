@@ -4,21 +4,21 @@
     #services.xserver.displayManager.gdm.wayland.enable = true;
     
     #neeed for Mount, trash. etc on Thunar
-    services.gvfs.enable = true;
+    #services.gvfs.enable = true;
 
     #Thumbnail supoport for images on Thunar
-    services.tumbler.enable = true;
+    #services.tumbler.enable = true;
 
-    programs.thunar.enable = true;
+    #programs.thunar.enable = true;
 
     #needed if xfce is not used as desktop, Saves and program preferences
     programs.xfconf.enable = true;
 
     #Thunar plugins
-    programs.thunar.plugins = with pkgs.xfce; [
-        thunar-volman
-        thunar-archive-plugin
-    ];
+    #programs.thunar.plugins = with pkgs.xfce; [
+    #    thunar-volman
+    #    thunar-archive-plugin
+    #];
 
     # enable Sway window manager
     programs.sway = {
@@ -44,6 +44,7 @@
         swayidle
         swaynotificationcenter
         brightnessctl
+        cosmic-files
     ];
     # Enable the gnome-keyring secrets vault.
     # Will be exposed through DBus to programs willing to store secrets.
