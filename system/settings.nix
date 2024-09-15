@@ -10,6 +10,13 @@
           enable = true;
           enable32Bit = true;
     };
+
+    #enable virtulisation
+    virtualisation.containers.enable = true; 
+        virtualisation.podman = {
+        enable = true;
+        dockerCompat = true;
+    };
     
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
