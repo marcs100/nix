@@ -28,7 +28,7 @@
 			#gnome-bluetooth
 			# extensions ----------
 			gnomeExtensions.tray-icons-reloaded
-			gnomeExtensions.dash-to-dock
+			#gnomeExtensions.dash-to-dock
 			#gnomeExtensions.no-overview
 			gnomeExtensions.resource-monitor
 			#----------------------
