@@ -12,7 +12,7 @@
     #programs.thunar.enable = true;
 
     #needed if xfce is not used as desktop, Saves and program preferences
-    programs.xfconf.enable = true;
+    #programs.xfconf.enable = true;
 
     #Thunar plugins
     #programs.thunar.plugins = with pkgs.xfce; [

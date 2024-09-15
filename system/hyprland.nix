@@ -4,7 +4,7 @@
     #services.xserver.displayManager.sddm.wayland.enable = true;
     
     #neeed for Mount, trash. etc on Thunar
-    services.gvfs.enable = true;
+    #services.gvfs.enable = true;
 
     #Thumbnail supoport for images on Thunar
     #services.tumbler.enable = true;
@@ -12,7 +12,7 @@
     #programs.thunar.enable = true;
 
     #needed if xfce is not used as desktop, Saves and program preferences
-    programs.xfconf.enable = true;
+    #programs.xfconf.enable = true;
 
     #Thunar plugins
     #programs.thunar.plugins = with pkgs.xfce; [
@@ -45,6 +45,7 @@
         hyprpaper
         swaynotificationcenter
         brightnessctl
+        cosmic-files
         #kdePackages.elisa
         #kdePackages.breeze
         #kdePackages.breeze-icons

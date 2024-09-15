@@ -30,7 +30,7 @@
         helix
         github-desktop
         #pkgs.scribe-cli
-        #(pkgs.callPackage "path:/home/marc/nix/packages/scribe-cli/" {})
+        #(pkgs.callPackage "path:./packages/scribe-cli/" {})
   ];
 
   #nixpkgs.config.packageOverrides = pkgs: {

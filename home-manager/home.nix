@@ -11,11 +11,12 @@
     bash = {
       enable = true;
       shellAliases = {
-        edit-conf = "vim -S ~/nix.vim";
+        edit-conf = "hx ~/nix/*.nix ~/nix/system/*.nix ~/nix/home-manager/*.nix";
         nix-rebuild = "sudo nixos-rebuild switch --flake ~/nix";
         nix-rebuild-boot = "sudo nixos-rebuild boot --flake ~/nix";
         nix-clean = "sudo nix-env --delete-generations +5 --profile /nix/var/nix/profiles/system && nix-collect-garbage && sudo nixos-rebuild boot --flake ~/nix";
-        devshell = "nix develop ~/nix/dev";    
+        devshell = "nix develop ~/nix/dev";
+        nix-gens = "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system";    
       };
     };
 

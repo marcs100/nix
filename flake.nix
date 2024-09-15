@@ -6,8 +6,9 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    #marcpkgs.url = "https://github.com/marcs100/scribe-cli/releases/tag/0.1.0/source";
-    scribecli-pkg.url = "path:./packages/scribe-cli/";
+    #scribecli-pkg.url = "github:marcs100/scribe-cli/master"; #this works build flake is in repo!
+    #scribecli-pkg.url = "github:marcs100/nixpkgs/master"; #can't get this to work!
+    scribecli-pkg.url = "path:./packages/scribe-cli/"; #this works!
   };
 
   outputs = { self, nixpkgs, home-manager, scribecli-pkg, ... }@inputs:
