@@ -4,6 +4,12 @@
     #[ # Include the results of the hardware scan.
     #  ./hardware-configuration.nix
     #];
+
+    #enable 3D acceleration
+    hardware.graphics = {
+          enable = true;
+          enable32Bit = true;
+    };
     
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
