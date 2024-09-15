@@ -45,14 +45,13 @@
               ./system/plasma.nix
               ./system/services.nix
               ./system/users.nix
-              home-manager.nixosModules.home-manager
-              {
+              home-manager.nixosModules.home-manager{
                   home-manager.extraSpecialArgs = {
-                  inherit username;
-                  inherit inputs;
-                  inherit host;
-                  inherit scribe-cli;
-                };
+                    inherit username;
+                    inherit inputs;
+                    inherit host;
+                    inherit scribe-cli;
+                  };
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;
                 home-manager.backupFileExtension = "backup";
