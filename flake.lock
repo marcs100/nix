@@ -65,14 +65,18 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-liRR5VuEcjJ/f/LOa1pGQ7PSr0vme1HC0Yk3O6FHFVM=",
-        "path": "./packages/scribe-cli/",
-        "type": "path"
+        "lastModified": 1726415291,
+        "narHash": "sha256-LuBs9ZILaGw37cm0We0IacmThv76oRmMzJdngaTz5dw=",
+        "owner": "marcs100",
+        "repo": "scribe-cli",
+        "rev": "bd07f29444446155733f62e36be1eedee3b78b73",
+        "type": "github"
       },
       "original": {
-        "path": "./packages/scribe-cli/",
-        "type": "path"
+        "owner": "marcs100",
+        "ref": "master",
+        "repo": "scribe-cli",
+        "type": "github"
       }
     }
   },
