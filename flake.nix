@@ -7,15 +7,14 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     scribecli-pkg.url = "github:marcs100/scribe-cli/master"; #this works build flake is in repo!
-    #scribecli-pkg.url = "github:marcs100/nixpkgs/master"; #can't get this to work!
+    #scribecli-pkg.url = "github:marcs100/nixpkgs/master"; #This worked when I created a release in github with tag "0.1.0"
     #scribecli-pkg.url = "path:./packages/scribe-cli/"; #this works!
   };
-
+  
   outputs = { self, nixpkgs, home-manager, scribecli-pkg, ... }@inputs:
   let
      system = "x86_64-linux";
      pkgs = nixpkgs.legacyPackages.${system};
-     scribe-cli = scribecli-pkg;
      host = "vortex";
      username = "marc";
   in
@@ -28,7 +27,7 @@
               inherit username;
               inherit host;
               inherit inputs;
-              inherit scribe-cli;
+              inherit scribecli-pkg;
             };
 
 
@@ -40,10 +39,10 @@
               ./system/boot.nix
               ./system/settings.nix
               ./system/system_pkgs.nix
-              #./system/gnome.nix
+              ./system/gnome.nix
               ./system/sway.nix
               #./system/hyprland.nix
-              ./system/plasma.nix
+              #./system/plasma.nix
               ./system/services.nix
               ./system/users.nix
               home-manager.nixosModules.home-manager{
@@ -51,7 +50,7 @@
                     inherit username;
                     inherit inputs;
                     inherit host;
-                    inherit scribe-cli;
+                    inherit scribecli-pkg;
                   };
                 home-manager.useGlobalPkgs = true;
                 home-manager.useUserPackages = true;

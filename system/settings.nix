@@ -17,6 +17,13 @@
         enable = true;
         dockerCompat = true;
     };
+
+    #Persistant dev shells?????????????
+    nix.extraOptions = ''
+        keep-outputs = true
+        keep-derivations = true
+
+    '';
     
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;

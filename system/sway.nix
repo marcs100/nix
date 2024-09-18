@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 {
-    #login manager - only use of not usinf with another desktop!
+    #login manager - only use of not using with another desktop!
     #services.xserver.displayManager.gdm.wayland.enable = true;
     
     #neeed for Mount, trash. etc on Thunar
