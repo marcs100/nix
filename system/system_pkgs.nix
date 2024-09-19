@@ -10,7 +10,6 @@
 
     environment.systemPackages = with pkgs; [
         vim #this will be managed by home manager
-        brave
         git
         curl
         wget
@@ -20,7 +19,7 @@
         bitwarden-desktop
         element-desktop
         discord
-        terminus-nerdfont
+        #terminus-nerdfont
         font-awesome
         distrobox
         podman
@@ -28,7 +27,6 @@
         libreoffice-qt6-fresh
         neovim
         helix
-        github-desktop
         zellij
         #pkgs.scribe-cli
         #(pkgs.callPackage "path:./packages/scribe-cli/" {})
