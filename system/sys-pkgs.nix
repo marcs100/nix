@@ -19,7 +19,7 @@
         bitwarden-desktop
         element-desktop
         discord
-        #terminus-nerdfont
+        terminus-nerdfont
         font-awesome
         distrobox
         podman

@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1726593622,
-        "narHash": "sha256-ZtPJLbeyqSXOeHTBzQJRAM7sFjOxsqTO+ozigqCxyj8=",
+        "lastModified": 1726825546,
+        "narHash": "sha256-HiBzfzgqojA9OjPB+vdi2o+gy4Zw/MEipuGopgGsZEw=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "4a4a8b145463ccfef579bb0e26275c97bf0b5bf2",
+        "rev": "0b052dd8119005c6ba819db48bcc657e48f401b7",
         "type": "github"
       },
       "original": {
@@ -65,11 +65,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1726517891,
-        "narHash": "sha256-GDHS3jibPGEyQ9OOPVmnWWo9FOjOCue90t7pR2hvbLo=",
+        "lastModified": 1726816713,
+        "narHash": "sha256-rO3Ybw+Kgc26o+1lmcTFTEwodvlS06BCDvVJr+L5Mto=",
         "owner": "marcs100",
         "repo": "scribe-cli",
-        "rev": "e8a5ee7726f46f1d2aaec3393a2ef4df22da0e61",
+        "rev": "b6d819193ca794d65779c98614a876adf6223cb3",
         "type": "github"
       },
       "original": {
