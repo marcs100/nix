@@ -28,6 +28,7 @@
         neovim
         helix
         zellij
+        lazygit
         #pkgs.scribe-cli
         #(pkgs.callPackage "path:./packages/scribe-cli/" {})
   ];
