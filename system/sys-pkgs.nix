@@ -31,6 +31,7 @@
         gitui
         lazygit
         yazi
+        wakeonlan
         #pkgs.scribe-cli
         #(pkgs.callPackage "path:./packages/scribe-cli/" {})
   ];
