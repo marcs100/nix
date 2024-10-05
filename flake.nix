@@ -39,10 +39,10 @@
               ./system/boot.nix
               ./system/settings.nix
               ./system/sys-pkgs.nix
-              #./system/gnome.nix
+              ./system/gnome.nix
               #./system/sway.nix
               #./system/hyprland.nix
-              ./system/plasma.nix
+              #./system/plasma.nix
               ./system/services.nix
               ./system/users.nix
               home-manager.nixosModules.home-manager{

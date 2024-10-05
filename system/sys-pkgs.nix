@@ -9,8 +9,8 @@
 
 
     environment.systemPackages = with pkgs; [
-        vim #this will be managed by home manager
-        git
+        #vim #this will be managed by home manager
+        #git
         curl
         wget
         btop
@@ -32,6 +32,7 @@
         lazygit
         yazi
         wakeonlan
+        docker-compose
         #pkgs.scribe-cli
         #(pkgs.callPackage "path:./packages/scribe-cli/" {})
   ];
